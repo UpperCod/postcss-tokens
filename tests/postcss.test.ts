@@ -12,8 +12,7 @@ test("result host", async () => {
         }
     );
 
-    await writeFile("./tests/expect-host.txt", result.css);
-
+    // await writeFile("./tests/expect-host.txt", result.css);
     assert.is(result.css, await readFile("./tests/expect-host.txt", "utf8"));
 });
 
