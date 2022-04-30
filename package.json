@@ -1,0 +1,38 @@
+{
+    "name": "@atomico/postcss-tokens",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Transform a simple object into tokens for webcomponents or html",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "uvu -r tsm tests",
+        "exports": "exports ./src/module.ts --types --exports --main module",
+        "prepublishOnly": "npm run test && npm run exports"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/atomicojs/postcss-tokens.git"
+    },
+    "author": "UpperCod",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/atomicojs/postcss-tokens/issues"
+    },
+    "homepage": "https://github.com/atomicojs/postcss-tokens#readme",
+    "devDependencies": {
+        "@types/node": "^17.0.30",
+        "postcss": "^8.4.12",
+        "tsm": "^2.2.1",
+        "typescript": "^4.6.3",
+        "uvu": "^0.5.3"
+    },
+    "peerDependencies": {
+        "postcss": "^8.4.12"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": false
+    }
+}
